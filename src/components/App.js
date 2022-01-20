@@ -2,7 +2,9 @@ import '../style/App.css';
 
 function App() {
   return (
-    <h1 className="text-3xl font-bold underline">This</h1> 
+    <div className="font-open">
+      <h1>Hello Easybank</h1> 
+    </div>
   )
 }
 
