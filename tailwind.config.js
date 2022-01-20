@@ -15,6 +15,10 @@ module.exports = {
     },
     fontFamily: {
       'open': ['"Open Sans"', 'sans-serif']
+    },
+    backgroundImage: {
+      'desktop': "url('../images/bg-intro-desktop.svg')",
+      'mobile': "url('../images/bg-intro-mobile.svg')"
     }
   },
   plugins: [],
