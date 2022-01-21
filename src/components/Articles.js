@@ -10,7 +10,7 @@ export default function Articles() {
                     <img src={item.picture} alt="" className='block w-full lg:h-[180px] '/>
                     <div className="p-4">
                         <p className='text-grayish-blue text-[0.6rem]'>By {item.author}</p>
-                        <h3 className='py-4 text-md text-dark-blue'>{item.title}</h3>
+                        <h3 className='py-4 text-md text-dark-blue hover:text-lime-green hover:cursor-pointer'>{item.title}</h3>
                         <p className='text-grayish-blue text-xs'>{item.description}</p>                   
                     </div>  
                 </div>

@@ -2,6 +2,7 @@ import Header from './Header';
 import Hero from './Hero';
 import Features from './Features';
 import Articles from './Articles';
+import Footer from './Footer';
 
 function App() {
   return (
@@ -10,6 +11,7 @@ function App() {
       <Hero />
       <Features />
       <Articles />
+      <Footer />
     </div>
   )
 }

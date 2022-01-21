@@ -6,6 +6,16 @@ import currency from "../images/image-currency.jpg";
 import restaurant from "../images/image-restaurant.jpg";
 import plane from "../images/image-plane.jpg";
 import confetti from "../images/image-confetti.jpg";
+import youtube from '../images/icon-youtube.svg';
+import facebook from '../images/icon-facebook.svg';
+import twitter from '../images/icon-twitter.svg';
+import pinterest from '../images/icon-pinterest.svg';
+import instagram from '../images/icon-instagram.svg';
+import logo from '../images/logo.svg';
+import logoWhite from '../images/logo-white.svg';
+import hamburger from '../images/icon-hamburger.svg';
+
+export const menus = [ logo, logoWhite, hamburger];
 
 export const navText = ["Home","About","Contact","Blog","Careers"];
 
@@ -68,3 +78,9 @@ export const articlesContent = [
         description:"After a lot of hard work by the whole team, we’re excited to launch our closed beta. It’s easy to request an invite through the site…",
     }
 ]
+
+export const socials = [ facebook, youtube, twitter, pinterest, instagram];
+
+export const footerMenu = ["About Us", "Contact", "Blog", "Careers", "Support", "Privacy Policy"];
+
+export const copyright = "© Easybank. All Rights Reserved";
