@@ -6,8 +6,8 @@ export default function Footer() {
       <div className=''>
           <img src={data.menus[1]} alt='' className='mx-auto mb-8' />
         <ul className='flex justify-center lg:mt-14'>
-            {data.socials.map(item => <li key={data.socials.indexOf(item)} className='mx-2'> 
-                <a href="#" className=''><img src={item} alt="Social Media Logo" className='scale-125 hover:cursor-pointer'/></a> 
+            {data.socialIcons.map(item => <li key={data.socialIcons.indexOf(item)} className='mx-2'> 
+                <a href="#">{item}</a> 
             </li> )}
         </ul>
       </div>
