@@ -2,7 +2,7 @@ import React from 'react';
 import * as data from './data';
 
 export default function Header() {
-    return <header className='bg-white z-10 absolute top-0 left-0 right-0 h-20 flex justify-center align-center px-8 lg:px-20 xl:px-40'>
+    return <header className='bg-white z-10 absolute top-0 left-0 right-0 h-16 lg:h-20 flex justify-center align-center px-8 lg:px-20 xl:px-40'>
         <img src={data.menus[0]} alt="" className='mr-auto self-center' />
         <nav className='hidden md:flex'>
             {data.navText.map( item => <a key={item} href="#" className='relative flex h-20 mx-1 lg:mx-4 my-auto no-underline text-grayish-blue align-middle group'>
