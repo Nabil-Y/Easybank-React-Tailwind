@@ -14,7 +14,6 @@ This is a solution to the [Easybank landing page challenge on Frontend Mentor](h
   - [Continued development](#continued-development)
   - [Useful resources](#useful-resources)
 - [Author](#author)
-- [Acknowledgments](#acknowledgments)
 
 **Note: Delete this note and update the table of contents based on what sections you keep.**
 
@@ -27,85 +26,82 @@ Users should be able to:
 - View the optimal layout for the site depending on their device's screen size
 - See hover states for all interactive elements on the page
 
+Self imposed rules
+
+- Use React to build the landing page and only use functional components because I only built a few small apps with class components
+- Use a CSS framework, here TailwindCSS, to style the landing page because I want to master a css framework
+- Push this project with the terminal because I've started uploading my first bits of code on Github with the drag and drop feature but it takes time so I want to push only via CLI now
+
 ### Screenshot
 
-![](./screenshot.jpg)
+![Desktop](./design/desktop-solution.jpg)
 
-Add a screenshot of your solution. The easiest way to do this is to use Firefox to view your project, right-click the page and select "Take a Screenshot". You can choose either a full-height screenshot or a cropped one based on how long the page is. If it's very long, it might be best to crop it.
-
-Alternatively, you can use a tool like [FireShot](https://getfireshot.com/) to take the screenshot. FireShot has a free option, so you don't need to purchase it. 
-
-Then crop/optimize/edit your image however you like, add it to your project, and update the file path in the image above.
-
-**Note: Delete this note and the paragraphs above when you add your screenshot. If you prefer not to add a screenshot, feel free to remove this entire section.**
+![Mobile](./design/mobile-solution.jpg)
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Live Site URL: [My solution](https://nabil-y.github.io/Easybank-React-Tailwind/)
 
 ## My process
 
 ### Built with
 
 - Semantic HTML5 markup
-- CSS custom properties
-- Flexbox
-- CSS Grid
-- Mobile-first workflow
 - [React](https://reactjs.org/) - JS library
-- [Next.js](https://nextjs.org/) - React framework
-- [Styled Components](https://styled-components.com/) - For styles
-
-**Note: These are just examples. Delete this note and replace the list above with your own choices**
+- [TailwindCSS](https://tailwindcss.com/) - Utility-first CSS framework
+- Mobile-first workflow (included in TailwindCSS)
 
 ### What I learned
 
-Use this section to recap over some of your major learnings while working through this project. Writing these out and providing code samples of areas you want to highlight is a great way to reinforce your own knowledge.
+I learned so much about React and tailwind building this landing page, it was very challenging to solve all the challenges of this project.
 
-To see how you can add code snippets, see below:
+Also it was combined with TailwindCSS so I had some other limitations. If you want to build a list, it can quickly become very verbose.
 
-```html
-<h1>Some HTML code I'm proud of</h1>
-```
-```css
-.proud-of-this-css {
-  color: papayawhip;
-}
-```
+Tailwind recommends in their documentation to loop through an array to avoid massive blocks of repeated code so I stored all the content needed in arrays to create my HTML list in JSX.
+The code looks cleaner and it respect the DRY principle. I appreciate this way and I don't think I'm copy/paste a list content manually ever again
+
+
 ```js
-const proudOfThisFunc = () => {
-  console.log('🎉')
-}
+{data.featuresContent.map(item => <div key={item.key} className='flex flex-col lg:mr-8 last:lg:mr-0'>
+                <img src={item.imageUrl} alt="" className='py-6 self-center lg:self-start'/>
+                <h3 className='text-dark-blue text-xl py-4'>{item.title}</h3>
+                <p className='text-grayish-blue'>{item.text}</p>
+            </div>)}
 ```
 
-If you want more help with writing markdown, we'd recommend checking out [The Markdown Guide](https://www.markdownguide.org/) to learn more.
 
-**Note: Delete this note and the content within this section and replace with your own learnings.**
+Notice the classnames preceded by "lg:" ? lg: is a screen size breakpoint (1024px) and the property afterwards only apply if the window width is 1024px or higher. 
+All styles whithout breakpoint are applied on all sizes so Tailwind is a mobile first framework thanks to that feature.
+
+To produce cleaner code, I tried to follow a pattern when naming my classes
+First background colors, followed by text properties (color and size), then margin/padding, then the rest
+Afterwards I put media query classes from narrowest screens to biggest screens
+And at last, I added hover effects.
+
+I hope it is easier to read thanks to that
+
+
+
+There was another challenge here, a small one but a complicated one (at least it was for me): add hover effect to SVG that will change their color.
+
+I looked how to do it and it would be donne with the fill property. Tailwind has one but it didn't work.
+After a lot of research I figured out that it was because the fill property don't work with <img> tags, only with <svg>.
+
+Problem is, I was already looping through an array to add properties in an image tag and I didn't know if I could add whole SVG tags with the Array.map method.
+Turns out you can store html tags in an array and map that array. I was very surprised but it shows the power of JSX.
+
 
 ### Continued development
 
-Use this section to outline areas that you want to continue focusing on in future projects. These could be concepts you're still not completely comfortable with or techniques you found useful that you want to refine and perfect.
-
-**Note: Delete this note and the content within this section and replace with your own plans for continued development.**
+I still feel I have only scratched the surface with React and there is still a lot to learn so I need to practice and study more on topics like hooks, lifecycle methods and state management solutions.
+I also have to practice a lot with Tailwind, at first I was a little bit reluctant with the long class names but in the end, it is well structured and it helps save time. It is also customizable but it has some limitations like modifying root font site or removing highligh tap on mobile but I'm sure future updates will adress that.
 
 ### Useful resources
 
-- [Example resource 1](https://www.example.com) - This helped me for XYZ reason. I really liked this pattern and will use it going forward.
-- [Example resource 2](https://www.example.com) - This is an amazing article which helped me finally understand XYZ. I'd recommend it to anyone still learning this concept.
-
-**Note: Delete this note and replace the list above with resources that helped you during the challenge. These could come in handy for anyone viewing your solution or for yourself when you look back on this project in the future.**
+- [Tailwind Documentation](https://tailwindcss.com/docs/installation) - This was my first time using Tailwind so I had to read the documentation a lot. It is well structured so I had no problem looking for what I needed.
+- [UseState video from Web Dev Simplified](https://www.youtube.com/watch?v=O6P86uwfdR0) - As I wanted to build this app with react functional component, I needed to learn hooks to manage state (for the dropdown menu on mobile). This video was very helpful to understand the basics of useState.
 
 ## Author
 
-- Website - [Add your name here](https://www.your-site.com)
-- Frontend Mentor - [@yourusername](https://www.frontendmentor.io/profile/yourusername)
-- Twitter - [@yourusername](https://www.twitter.com/yourusername)
-
-**Note: Delete this note and add/remove/edit lines above based on what links you'd like to share.**
-
-## Acknowledgments
-
-This is where you can give a hat tip to anyone who helped you out on this project. Perhaps you worked in a team or got some inspiration from someone else's solution. This is the perfect place to give them some credit.
-
-**Note: Delete this note and edit this section's content as necessary. If you completed this challenge by yourself, feel free to delete this section entirely.**
+- Website - [Portfolio](https://nabil-y.github.io/ProjectHub/)
+- Frontend Mentor - [@Nabil-Y](https://www.frontendmentor.io/profile/Nabil-Y)
