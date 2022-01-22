@@ -15,8 +15,6 @@ This is a solution to the [Easybank landing page challenge on Frontend Mentor](h
   - [Useful resources](#useful-resources)
 - [Author](#author)
 
-**Note: Delete this note and update the table of contents based on what sections you keep.**
-
 ## Overview
 
 ### The challenge
@@ -94,6 +92,7 @@ Turns out you can store html tags in an array and map that array. I was very sur
 ### Continued development
 
 I still feel I have only scratched the surface with React and there is still a lot to learn so I need to practice and study more on topics like hooks, lifecycle methods and state management solutions.
+
 I also have to practice a lot with Tailwind, at first I was a little bit reluctant with the long class names but in the end, it is well structured and it helps save time. It is also customizable but it has some limitations like modifying root font site or removing highligh tap on mobile but I'm sure future updates will adress that.
 
 ### Useful resources
