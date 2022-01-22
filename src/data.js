@@ -9,10 +9,25 @@ import confetti from "./images/image-confetti.jpg";
 import logo from './images/logo.svg';
 import logoWhite from './images/logo-white.svg';
 import hamburger from './images/icon-hamburger.svg';
+import hamburgerClose from './images/icon-close.svg';
 
-export const menus = [ logo, logoWhite, hamburger];
+export const menus = [ logo, logoWhite, hamburger, hamburgerClose];
 
 export const navText = ["Home","About","Contact","Blog","Careers"];
+
+export const navHtmlMobile = [ <nav className='bg-white absolute top-24 left-8 right-8 rounded-lg shadow-[0_80px_200px_-30px_rgba(45,49,77,1)] md:shadow-none md:static md:flex'>
+{navText.map( item => <a key={item} href="#" className='text-grayish-blue relative flex h-16 mx-1 my-auto no-underline align-middle group lg:h-20 lg:mx-4'>
+        <span className='block my-auto mx-auto transition group-hover:text-lime-green group-hover:md:text-current'>{item}</span>
+        <span className='bg-gradient-to-r from-lime-green to-bright-cyan block h-[5px] absolute bottom-0 left-0 right-0 opacity-0 transition hidden md:block group-hover:opacity-100' ></span>    
+    </a> )}
+</nav>];
+
+export const navHtmlDesktop = [ <nav className='bg-white hidden absolute top-24 left-8 right-8 rounded-lg shadow-2xl md:shadow-none md:static md:flex'>
+{navText.map( item => <a key={item} href="#" className='text-grayish-blue relative flex h-16 mx-1 my-auto no-underline align-middle group lg:h-20 lg:mx-4'>
+        <span className='block my-auto mx-auto transition group-hover:text-lime-green group-hover:md:text-current'>{item}</span>
+        <span className='bg-gradient-to-r from-lime-green to-bright-cyan block h-[5px] absolute bottom-0 left-0 right-0 opacity-0 transition hidden md:block group-hover:opacity-100' ></span>    
+    </a> )}
+</nav>];
 
 export const heroText = ["Next generation digital banking", "Take your financial life online. Your Easybank account will be a one-stop-shop for spending, saving, budgeting, investing, and much more."];
 
