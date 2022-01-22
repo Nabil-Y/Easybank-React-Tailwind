@@ -4,7 +4,7 @@ import * as data from '../data';
 export default function Footer() {
   return <footer className='bg-dark-blue py-12 px-8 lg:flex lg:px-20 xl:px-40'>
       <div className=''>
-          <img src={data.menus[1]} alt='' className='mx-auto mb-8' />
+          <img src={data.menus[1]} alt='' className='mx-auto mb-8 lg:ml-0' />
         <ul className='flex justify-center lg:mt-14'>
             {data.socialIcons.map(item => <li key={data.socialIcons.indexOf(item)} className='mx-2'> 
                 <a href="#">{item}</a> 
