@@ -7,10 +7,10 @@ export default function Articles() {
         <div className='pt-8 lg:flex'>
             {data.articlesContent.map(item => <article key={item.title} className='flex flex-col lg:mr-8 last:lg:mr-0'>
                 <div className='bg-white mb-8 rounded-lg overflow-hidden lg:flex-1 mx-auto lg:mx-0 max-w-[300px] md:max-w-[400px] lg:max-w-none '>
-                    <img src={item.picture} alt="" className='block w-full lg:max-h-[220px]'/>
+                    <img src={item.picture} alt="" className='block w-full lg:h-[180px] xl:h-[200px]'/>
                     <div className="p-4">
                         <p className='text-grayish-blue text-[0.6rem]'>By {item.author}</p>
-                        <a href="#"><h3 className='py-4 text-md text-dark-blue hover:text-lime-green'>{item.title}</h3></a> 
+                        <a href="#"><h3 className='py-4 text-md text-dark-blue hover:text-lime-green transition'>{item.title}</h3></a> 
                         <p className='text-grayish-blue text-xs'>{item.description}</p>                   
                     </div>  
                 </div>

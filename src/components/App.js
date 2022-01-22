@@ -6,7 +6,7 @@ import Footer from './Footer';
 
 function App() {
   return (
-    <div className="font-open text-center overflow-x-hidden">
+    <div className="font-open text-center overflow-x-hidden transition">
       <Header />
       <Hero />
       <Features />
