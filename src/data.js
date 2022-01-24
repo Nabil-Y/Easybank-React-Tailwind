@@ -17,7 +17,7 @@ export const navText = ["Home","About","Contact","Blog","Careers"];
 
 export const navHtmlMobile = [ <nav className='bg-white absolute top-24 left-8 right-8 rounded-lg shadow-[0_50px_80px_30px_rgba(45,49,77,0.6)] md:shadow-none md:static md:block'>
     <ul className="flex flex-col md:flex-row">
-        {navText.map( item => <li key={item} className="mx-1 lg:mx-4"> <a href="/#" className='text-grayish-blue block relative h-16 no-underline group lg:h-20'>
+        {navText.map( item => <li key={item} className="mx-1 lg:mx-4"> <a href="#" className='text-grayish-blue block relative h-16 no-underline group lg:h-20'>
             <span className='h-16 flex items-center justify-center transition lg:h-20 group-hover:text-dark-blue'>{item}</span>
             <span className='bg-gradient-to-r from-lime-green to-bright-cyan h-[5px] absolute bottom-0 left-0 right-0 opacity-0 transition hidden md:block group-hover:opacity-100' ></span>    
         </a> </li> )}
@@ -26,7 +26,7 @@ export const navHtmlMobile = [ <nav className='bg-white absolute top-24 left-8 r
 
 export const navHtmlDesktop = [ <nav className='bg-white hidden absolute top-24 left-8 right-8 md:block md:static'>
     <ul className="flex">
-        {navText.map( item => <li key={item} className="mx-1 lg:mx-4"><a href="/#" className='text-grayish-blue block relative h-16 no-underline group lg:h-20 '>
+        {navText.map( item => <li key={item} className="mx-1 lg:mx-4"><a href="#" className='text-grayish-blue block relative h-16 no-underline group lg:h-20 '>
             <span className='h-16 flex items-center justify-center transition lg:h-20 group-hover:text-dark-blue'>{item}</span>
             <span className='bg-gradient-to-r from-lime-green to-bright-cyan h-[5px] absolute bottom-0 left-0 right-0 opacity-0 transition hidden md:block group-hover:opacity-100' ></span>    
         </a> </li> )}
