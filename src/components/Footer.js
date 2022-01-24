@@ -7,14 +7,14 @@ export default function Footer() {
           <img src={data.menus[1]} alt='' className='mx-auto mb-8 lg:ml-0' />
         <ul className='flex justify-center lg:mt-14'>
             {data.socialIcons.map(item => <li key={data.socialIcons.indexOf(item)} className='mx-2'> 
-                <a href="#"><span className='sr-only'>{item["name"]}</span>{item["html"]}</a> 
+                <a href="/#"><span className='sr-only'>{item["name"]}</span>{item["html"]}</a> 
             </li> )}
         </ul>
       </div>
       <nav className=''>
         <ul className='py-8 lg:flex lg:flex-col lg:flex-wrap lg:text-left lg:py-0 lg:h-[130px] lg:mx-16'>
             {data.footerMenu.map(item => <li key={item} className='py-1 lg:mx-10'> 
-                <a href="#" className='text-gray-light transition hover:text-lime-green hover:cursor-pointer'>{item}</a>
+                <a href="/#" className='text-gray-light transition hover:text-lime-green hover:cursor-pointer'>{item}</a>
             </li> )}
         </ul>
       </nav>
