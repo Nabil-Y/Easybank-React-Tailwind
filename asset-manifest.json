@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/Easybank-React-Tailwind/static/css/main.9cb5b486.css",
-    "main.js": "/Easybank-React-Tailwind/static/js/main.584e2901.js",
+    "main.css": "/Easybank-React-Tailwind/static/css/main.0cfcfeb3.css",
+    "main.js": "/Easybank-React-Tailwind/static/js/main.e61ef11c.js",
     "static/media/image-currency.jpg": "/Easybank-React-Tailwind/static/media/image-currency.1b385bf9f62bf25ef22d.jpg",
     "static/media/image-restaurant.jpg": "/Easybank-React-Tailwind/static/media/image-restaurant.1951b57675babfd83c6c.jpg",
     "static/media/image-mockups.png": "/Easybank-React-Tailwind/static/media/image-mockups.48d35b175fe3d36de4ee.png",
@@ -18,11 +18,11 @@
     "index.html": "/Easybank-React-Tailwind/index.html",
     "static/media/icon-close.svg": "/Easybank-React-Tailwind/static/media/icon-close.c2e36e0469b3b1e6c27328356ce18aed.svg",
     "static/media/icon-hamburger.svg": "/Easybank-React-Tailwind/static/media/icon-hamburger.b0d311feac968ee5feab7333de091d7f.svg",
-    "main.9cb5b486.css.map": "/Easybank-React-Tailwind/static/css/main.9cb5b486.css.map",
-    "main.584e2901.js.map": "/Easybank-React-Tailwind/static/js/main.584e2901.js.map"
+    "main.0cfcfeb3.css.map": "/Easybank-React-Tailwind/static/css/main.0cfcfeb3.css.map",
+    "main.e61ef11c.js.map": "/Easybank-React-Tailwind/static/js/main.e61ef11c.js.map"
   },
   "entrypoints": [
-    "static/css/main.9cb5b486.css",
-    "static/js/main.584e2901.js"
+    "static/css/main.0cfcfeb3.css",
+    "static/js/main.e61ef11c.js"
   ]
 }
